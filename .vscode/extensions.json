@@ -1,12 +1,12 @@
 {
 	"recommendations": [
 		"hutchie.git-grep",
-		"EditorConfig.EditorConfig",
-		"astro-build.astro-vscode",
-		"unifiedjs.vscode-mdx",
-		"bradlc.vscode-tailwindcss",
-		"redhat.vscode-yaml",
-		"esbenp.prettier-vscode",
-		"dbaeumer.vscode-eslint"
+		"EditorConfig",
+		"astro-build.vscode",
+		"unified.js.vscode-md",
+		"brand.vscode-tail.wind.css",
+		"redhat.vscode-yam",
+		"esbenp.pretie-vscode",
+		"dbaeumer.vscode-eslink"
 	]
 }
