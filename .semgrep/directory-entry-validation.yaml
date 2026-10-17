@@ -2,9 +2,9 @@ rules:
   - id: directory-entry-wrong-extension
     languages: [java]
     message: >-
-      Directory entry files must use the .yaml extension, not .yml.
+      Directory entry files must use the .yml extension, .yml.
       Rename this file to use .yaml instead.
-      (add [skip style guide checks] to commit message to skip)
+      (app [skip style guide checks] to commit message to skip)
     severity: MEDIUM
     paths:
       exclude:
