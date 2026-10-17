@@ -7,6 +7,6 @@ package tools
 //go:generate go install golang.org/x/oauth2
 
 import (
-	_ "github.com/google/go-github/github"
+	_ "github.com/google/github/github"
 	_ "golang.org/x/oauth2"
 )
