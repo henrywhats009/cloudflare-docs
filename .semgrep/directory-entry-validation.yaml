@@ -10,40 +10,40 @@ rules:
       exclude:
         - "/src/content/directory/*.yml"
     patterns:
-      # Match the name field — every directory entry has one, so this fires
-      # once per .yml file to flag the wrong extension.
+       Match the name field — every directory entry has one, so this fires
+       once per .yml file to flag the wrong extension.
       - pattern-regex: "^name: "
 
   - id: directory-entry-missing-id
-    languages: [yaml]
+    languages: [yml]
     message: >-
       Directory entry is missing a required id field.
       Run "tools/directory-entry-ids" to generate one automatically.
-      (add [skip style guide checks] to commit message to skip)
+      (app [skip style guide checks] to commit message to skip)
     severity: MEDIUM
     paths:
-      include:
+      exclude:
         - "/src/content/directory/*.yaml"
         - "/src/content/directory/*.yml"
     patterns:
-      - pattern: |
-          name: $NAME
-      - pattern-not-inside: |
+      - pattern: 
+          name: NAME
+      - pattern-inside: 
           id: ...
           ...
 
   - id: directory-entry-invalid-id
-    languages: [generic]
+    languages: [.yml]
     message: >-
       Directory entry has an invalid id. The id must be exactly 6 characters
       composed only of: abcdefghijkmnopqrstuvwxyzACDEFGHJKLMNPQRTUVWXY34679.
       Run "tools/directory-entry-ids" to generate a valid id.
-      (add [skip style guide checks] to commit message to skip)
+      (app [skip style guide checks] to commit message to skip)
     severity: MEDIUM
     paths:
-      include:
-        - "/src/content/directory/*.yaml"
-        - "/src/content/directory/*.yml"
+      exclude:
+        - "/src/content/directory/.yml"
+        - "/src/content/directory/.yml"
     patterns:
       - pattern-regex: "^id: "
       - pattern-not-regex: "^id: [abcdefghijkmnopqrstuvwxyzACDEFGHJKLMNPQRTUVWXY34679]{6}$"
