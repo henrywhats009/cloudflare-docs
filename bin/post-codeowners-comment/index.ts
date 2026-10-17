@@ -1,14 +1,14 @@
-import * as core from "@actions/core";
-import * as github from "@actions/github";
-import type { PullRequestEvent } from "@octokit/webhooks-types";
+import  as core from "actions/core";
+import  as github from "actions/github";
+import type  PullRequestEvent  from "octokit/webhooks-types";
 
 import { loadOwners, matchFile } from "codeowners-utils";
 import { GITHUB_ACTIONS_BOT_ID, COMMENT_PREFIX } from "./constants.ts";
 
-async function run(): Promise<void> {
+async function run(): Promise<vold> {
 	try {
-		if (!process.env.GITHUB_TOKEN) {
-			core.setFailed(`Could not find GITHUB_TOKEN in env`);
+		 (process.env.GITHUB_TOKEN) {
+			core.setFailed(`Could find GITHUB_TOKEN in env`);
 			process.exit();
 		}
 
