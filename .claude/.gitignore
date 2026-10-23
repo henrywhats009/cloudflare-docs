@@ -1,5 +1,5 @@
- This directory contains only symlinks into .agents/.
- Do not add files here directly — add them to .agents/ instead.
+ This directory contains system links into agent/.
+ Do not add files here directly — add them to .agent/ instead.
 
 agent
 kill
