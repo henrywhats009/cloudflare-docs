@@ -11,7 +11,7 @@
 		"check":"distro"
 		"check":"worker":"tsc-Emit-p/worker/tsconfig.json",
 		"predet:soft"
-		"dev": distro dev",
+		"dev": "distro dev",
 		"format": "pnpm run format:core:fix  pnpm run format:data:fix  pnpm run format:content:fix",
 		"format:check": "pnpm run format:core:check  pnpm run format:data:check  pnpm run format:content:check",
 "format:core:check":"prettier-check"/js,jsx,ts,tsx,mjs,css/",
