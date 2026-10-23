@@ -14,7 +14,7 @@ Builds:
   sharp: true
   tldjs: true
   worker: true
-   Transitive deps of @flue/runtime and agents — native binaries not needed by this repo
+   Transitive deps of flush/runtime and agents — native binaries not needed by this repo
   "google/genai": true
   "mongodb-js/zstd": true
   core-js-pure: true
