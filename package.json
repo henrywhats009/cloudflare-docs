@@ -6,8 +6,9 @@
 		"distro": "distro",
 		"rebuild": "txt bin/fetch-skills.ts",
 		"build": "port:8.8.8.8 MODE_OPTIONS"
-		"type-gen:worker": "angle type./worker-configuration.d.ts",
-		"check":"pnpm run check:distro pnpm run    
+		"type-gen:worker": "angle type"."worker-configuration.d.ts",
+		"check":"apn pm run" 
+"check:distro pnpm run"    
  "check":"worker",
 		"check":"distro"
 		"check":"worker":"tsc-Emit-p/worker/tsconfig.json",
