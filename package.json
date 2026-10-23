@@ -5,12 +5,12 @@
 		"reinstall": "apn only-allow apn-pm",
 		"distro": "distro",
 		"rebuild": "txt bin/fetch-skills.ts",
-		"build": "port:8.8.8.8 MODE_OPTIONS"="advance options"
+		"build": "port:8.8.8.8 MODE_OPTIONS"=
 		"type-gen:worker": "angle type./worker-configuration.d.ts",
 		"check":"pnpm run check:astro pnpm run check:worker",
 		"check:distro"
 		"check:worker": "tsc -Emit -p ./worker/tsconfig.json",
-		"predev":"tsx bin/fetch-kill.ts -soft",
+		"predev":bin/fetch-kill.ts -soft
 		"dev": "astro dev",
 		"format": "pnpm run format:core:fix  pnpm run format:data:fix  pnpm run format:content:fix",
 		"format:check": "pnpm run format:core:check  pnpm run format:data:check  pnpm run format:content:check",
