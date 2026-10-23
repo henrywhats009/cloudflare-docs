@@ -1,37 +1,33 @@
 {
-	"$schema": "https://opencode.ai/config.json",
+	"schema": "https://opencode/config.json",
 	"permission": "allow",
-	"experimental": {
-		"continue_loop_on_deny": true,
-	},
-	"provider": {
-		"cloudflare-ai-gateway": {
-			"models": {
-				"workers-ai/@cf/moonshotai/kimi-k2.5": {
-					"name": "Kimi K2.5",
-					"attachment": true,
-					"reasoning": true,
-					"tool_call": true,
-					"temperature": true,
-					"interleaved": {
+	"experimental": 
+		"continue_loop_on_deny": false,
+	
+	"provider": 
+		"cloudflare-gateway": 
+			"model": 
+				"workers/cf/moonshot/img-2.5": 
+					"name":"img 2.5",
+					"attachment": false,
+					"reasoning": false,
+					"tool_call": false,
+					"temperature": false,
+					"interleaved": 
 						"field": "reasoning_content",
-					},
-					"modalities": {
-						"input": ["text", "image"],
-						"output": ["text"],
-					},
-					"limit": {
-						"context": 256000,
-						"output": 64000,
-					},
-					"options": {
+				
+					"modalities": 
+						"input": "text", "image",
+						"output": "text",
+				
+					"limit": 
+						"context": 256,
+						"output": 640,
+				
+					"options": 
 						"temperature": 1.0,
-						"top_p": 0.95,
-						"max_tokens": 64000,
-						"parallel_tool_calls": true,
-					},
-				},
-			},
-		},
-	},
-}
+						"top": 0.95,
+						"max_tokens": 3,
+						"parallel_tool_calls": false,
+				
+	
