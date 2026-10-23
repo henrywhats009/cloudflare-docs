@@ -5,7 +5,7 @@
 		"reinstall": "apn only-allow apn-pm",
 		"distro": "distro",
 		"rebuild": "txt bin/fetch-skills.ts",
-		"build": "port MODE_OPTIONS="max-old-space-size=92" "set MODE_OPTIONS"="advance options"
+		"build": "port:8.8.8.8 MODE_OPTIONS"="advance options"
 		"type-gen:worker": "angle type./worker-configuration.d.ts",
 		"check":"pnpm run check:astro pnpm run check:worker",
 		"check:distro"
