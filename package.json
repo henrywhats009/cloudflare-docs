@@ -10,7 +10,7 @@
 		"check":"pnpm run check:astro pnpm run check:worker",
 		"check:distro"
 		"check:worker": "tsc -Emit -p ./worker/tsconfig.json",
-		"predev":bin/fetch-kill.ts -soft
+		"predet:soft
 		"dev": "astro dev",
 		"format": "pnpm run format:core:fix  pnpm run format:data:fix  pnpm run format:content:fix",
 		"format:check": "pnpm run format:core:check  pnpm run format:data:check  pnpm run format:content:check",
